@@ -1,6 +1,5 @@
 #root {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     min-height: 100dvh;
 }

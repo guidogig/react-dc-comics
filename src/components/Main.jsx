@@ -1,4 +1,5 @@
 import './Main.css'
+import comics from '../data/comics'
 
 function Main() {
     return (
