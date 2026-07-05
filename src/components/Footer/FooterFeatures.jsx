@@ -3,6 +3,7 @@ import './FooterFeatures.css';
 function FooterFeatures() {
     return (
         <>
+        <p>FooterFeatures</p>
         </>
     )
 }

@@ -1,12 +1,16 @@
-import './App.css'
+import "./App.css";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-    </>
-  )
+    return (
+        <>
+            <Header />
+            <Main />
+            <Footer />
+        </>
+    );
 }
 
-export default App
+export default App;
