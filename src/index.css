@@ -5,6 +5,10 @@
     font-family: "Open Sans", sans-serif;
 }
 
+body {
+    min-height: 100% dvh;
+}
+
 ul {
     list-style-type: none;
 }
