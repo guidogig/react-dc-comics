@@ -1,0 +1,31 @@
+footer > div > .container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer .footer_features {
+    background-color: #0282f9;
+    color: #ffffff;
+}
+
+footer .footer_features ul {
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+footer .footer_features ul li {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer_nav {
+    background-color: #ffffff;
+}
+
+footer .footer_CTA {
+    background-color: #303030;
+    color: #ffffff;
+}
