@@ -8,9 +8,9 @@ function FooterFeatures() {
                 <ul>
                     {footerFeatures.map(feature =>{
                         return (
-                            <li>
-                                <img key={feature.key} src={feature.src} alt={feature.title} />
-                                <span>{feature.title}</span>
+                            <li key={feature.key}>
+                                <img src={feature.src} alt={feature.title} />
+                                <p>{feature.title}</p>
                             </li>
                         )
                     })}

@@ -19,6 +19,13 @@ footer .footer_features ul {
 footer .footer_features ul li {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+
+footer .footer_features ul li img {
+    max-height: 50%;
 }
 
 footer .footer_nav {
