@@ -1,5 +1,6 @@
 import './Footer.css'
 import footerFeatures from '../../data/footerFeatures'
+import footerNavLinks from '../../data/footerNavLinks'
 
 function FooterFeatures() {
     return (
@@ -7,8 +8,8 @@ function FooterFeatures() {
             <ul className="container">
                 {footerFeatures.map(feature => {
                     return (
-                        <a href={feature.href}>
-                            <li key={feature.key}>
+                        <a key={feature.key} href={feature.href}>
+                            <li>
                                 <img src={feature.src} alt={feature.title} />
                                 <p>{feature.title}</p>
                             </li>
@@ -24,7 +25,23 @@ function FooterNav() {
     return (
         <div className="footer_nav">
             <div className="container">
-                Footer Nav
+                <div className="footer_links">
+                    {footerNavLinks.map(section => {
+                        return(
+                            <ul key={section.id}>
+                                <li><h3>{section.title}</h3></li>
+                                {section.links.map(link => {
+                                    return (
+                                        <li key={link.key}><a href={link.href}>{link.title}</a></li>
+                                    )
+                                })}
+                            </ul>
+                        )
+                    })}
+                </div>
+                <div className="footer_logo">
+                    <img src="/img/dc-logo-bg.png" alt="logo-bg" />
+                </div>
             </div>
         </div>
     )
