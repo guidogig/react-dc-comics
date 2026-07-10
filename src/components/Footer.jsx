@@ -1,4 +1,17 @@
+//stili
 import "./Footer.css";
+
+function Footer({ features, navLinks }) {
+  return (
+    <footer className="footer">
+      <FooterFeatures data={features} />
+      <FooterNav data={navLinks} />
+      <FooterCTA />
+    </footer>
+  );
+}
+
+export default Footer;
 
 function FooterFeatures({ data }) {
   return (
@@ -48,15 +61,3 @@ function FooterCTA() {
     </div>
   );
 }
-
-function Footer({ features, navLinks }) {
-  return (
-    <footer className="footer">
-      <FooterFeatures data={features} />
-      <FooterNav data={navLinks} />
-      <FooterCTA />
-    </footer>
-  );
-}
-
-export default Footer;
