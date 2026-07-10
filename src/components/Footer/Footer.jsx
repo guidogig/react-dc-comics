@@ -4,18 +4,18 @@ import footerFeatures from '../../data/footerFeatures'
 function FooterFeatures() {
     return (
         <div className="footer_features">
-            <div className="container">
-                <ul>
-                    {footerFeatures.map(feature =>{
-                        return (
+            <ul className="container">
+                {footerFeatures.map(feature => {
+                    return (
+                        <a href={feature.href}>
                             <li key={feature.key}>
                                 <img src={feature.src} alt={feature.title} />
                                 <p>{feature.title}</p>
                             </li>
-                        )
-                    })}
-                </ul>
-            </div>
+                        </a>
+                    )
+                })}
+            </ul>
         </div>
     )
 }
@@ -44,9 +44,9 @@ function FooterCTA() {
 function Footer() {
     return (
         <footer className='footer'>
-                <FooterFeatures />
-                <FooterNav />
-                <FooterCTA />
+            <FooterFeatures />
+            <FooterNav />
+            <FooterCTA />
         </footer>
     )
 }
