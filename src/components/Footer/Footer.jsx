@@ -23,24 +23,18 @@ function FooterNav() {
   return (
     <div className="footer_nav">
       <div className="container">
-        <div className="footer_links">
-          {footerNavLinks.map((section) => {
-            return (
-              <ul key={section.id}>
-                <li>
-                  <h3>{section.title}</h3>
+        {footerNavLinks.map(({ id, title, className, links }) => (
+          <section key={id} className={className}>
+            <h3>{title}</h3>
+            <ul>
+              {links.map(({ key, content, href }) => (
+                <li key={key}>
+                  <a href={href}>{content}</a>
                 </li>
-                {section.links.map((link) => {
-                  return (
-                    <li key={link.key}>
-                      <a href={link.href}>{link.title}</a>
-                    </li>
-                  );
-                })}
-              </ul>
-            );
-          })}
-        </div>
+              ))}
+            </ul>
+          </section>
+        ))}
         <div className="footer_logo">
           <img src="/img/dc-logo-bg.png" alt="logo-bg" />
         </div>

@@ -49,28 +49,18 @@ footer .footer_nav .container {
   align-items: center;
 }
 
-footer .footer_nav .footer_links {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
+footer .footer_nav .container section {
+  margin-top: 20px;
+  align-self: flex-start;
 }
 
-footer .footer_nav .footer_links h3 {
-  margin-bottom: 10px;
-}
-
-footer .footer_nav .footer_links a {
+footer .footer_nav .container section ul li {
+  margin-top: 5px;
   color: #999999;
-  text-decoration: none;
-  font-size: 0.9rem;
 }
 
-footer .footer_nav .footer_links a:hover {
+footer .footer_nav .container section ul li:hover {
   color: #ffffff;
-}
-
-footer .footer_nav .footer_links ul li {
-  margin-bottom: 5px;
 }
 
 footer .footer_nav .footer_logo {
