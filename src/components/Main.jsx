@@ -1,12 +1,11 @@
-import './Main.css'
-import comics from '../data/comics'
+import "./Main.css";
 
-function Main() {
-    return (
-        <main>
-            <p>--&gt; Content Goes Here &lt;--</p>
-        </main>
-    )
+function Main({ comics }) {
+  return (
+    <main>
+      <p>--&gt; Content Goes Here &lt;--</p>
+    </main>
+  );
 }
 
-export default Main
+export default Main;

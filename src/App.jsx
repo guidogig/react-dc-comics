@@ -7,15 +7,16 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 
 //dati
+import navLinks from "./data/navLinks";
+import comics from "./data/comics";
 import footerFeatures from "./data/footerFeatures";
 import footerNavLinks from "./data/footerNavLinks";
-import navLinks from "./data/navLinks";
 
 function App() {
   return (
     <>
       <Header links={navLinks} />
-      <Main />
+      <Main comics={comics} />
       <Footer features={footerFeatures} navLinks={footerNavLinks} />
     </>
   );

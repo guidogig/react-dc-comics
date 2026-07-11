@@ -4,8 +4,8 @@ import "./Footer.css";
 function Footer({ features, navLinks }) {
   return (
     <footer className="footer">
-      <FooterFeatures data={features} />
-      <FooterNav data={navLinks} />
+      <FooterFeatures features={features} />
+      <FooterNav navLinks={navLinks} />
       <FooterCTA />
     </footer>
   );
@@ -13,11 +13,11 @@ function Footer({ features, navLinks }) {
 
 export default Footer;
 
-function FooterFeatures({ data }) {
+function FooterFeatures({ features }) {
   return (
     <div className="footer_features">
       <ul className="container">
-        {data.map(({ key, href, title, src }) => (
+        {features.map(({ key, href, title, src }) => (
           <a key={key} href={href}>
             <li>
               <img src={src} alt={title} />
@@ -30,11 +30,11 @@ function FooterFeatures({ data }) {
   );
 }
 
-function FooterNav({ data }) {
+function FooterNav({ navLinks }) {
   return (
     <div className="footer_nav">
       <div className="container">
-        {data.map(({ id, title, className, links }) => (
+        {navLinks.map(({ id, title, className, links }) => (
           <section key={id} className={className}>
             <h3>{title}</h3>
             <ul>
