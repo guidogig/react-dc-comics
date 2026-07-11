@@ -1,43 +1,48 @@
 header {
-    background-color: #ffffff;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  opacity: 95%;
 }
 
 header .container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .container nav {
-    display: flex;
-    align-self: stretch;
-    flex-shrink: 1;
+  display: flex;
+  align-self: stretch;
+  flex-shrink: 1;
 }
 
 header .container img {
-    padding: 10px;
+  padding: 10px;
 }
 
 header .container ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    font-weight: bold;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-weight: bold;
+  align-items: center;
 }
 
 /* Gestione colori e bordino su hover links */
 header .container ul li {
-    border-bottom: 5px solid transparent;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  font-variation-settings: "wdth" 85;
+  border-bottom: 5px solid transparent;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 header .container ul li:hover {
-    color: #0282f9;
-    border-color: #0282f9;
+  color: #0282f9;
+  border-color: #0282f9;
 }
