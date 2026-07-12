@@ -34,7 +34,10 @@ header .container ul {
   align-items: center;
 }
 
-/* Gestione colori e bordino su hover links */
+/* Gestione colori e bordino su hover links 
+Si poteva fare anche lato JSX con un className dinamico
+che andava a pescare da una proprietà dell'oggetto in navLinks[]
+*/
 header .container ul li {
   font-variation-settings: "wdth" 85;
   border-bottom: 5px solid transparent;

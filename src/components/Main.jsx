@@ -5,7 +5,7 @@ function Main({ comics }) {
     <main>
       <div className="jumbotron"></div>
       <div className="badge-series">
-        <section>CURRENT SERIES</section>
+        <h2>CURRENT SERIES</h2>
       </div>
       <Comics comics={comics} />
       <div className="btn-container">

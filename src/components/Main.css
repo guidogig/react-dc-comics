@@ -15,7 +15,7 @@ main .badge-series {
   margin: 0 auto;
 }
 
-main .badge-series section {
+main .badge-series h2 {
   position: relative;
   top: -2rem;
   left: -2rem;
@@ -61,15 +61,12 @@ main .btn-container .load-more-btn {
   font-variation-settings: "wdth" 75;
 }
 
-/* 
-STILI GANZI PER I BOTTONI CONSIGLIATI DA GEMINI!
-
-Un leggero cambio colore quando ci passi sopra con il mouse 
+/* STILI GANZI PER I BOTTONI CONSIGLIATI DA GEMINI!*/
 main .btn-container .load-more-btn:hover {
-  cursor: pointer; 
+  cursor: pointer;
   background-color: #0376e2;
 }
-Il feedback al click vero e proprio
+
 main .btn-container .load-more-btn:active {
-  transform: scale(0.96); 
-} */
+  transform: scale(0.95);
+}
